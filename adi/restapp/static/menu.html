@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushi Zen Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #c8102e;
+      --dark: #0f0f0f;
+      --light: #ffffff;
+      --muted: #dddddd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--light);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--light);
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .menu-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .menu-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--primary);
+      border-bottom: 1px solid var(--muted);
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item h3 {
+      color: var(--light);
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+    }
+
+    .menu-item p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0 10px 15px;
+    }
+
+    .menu-item .price {
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      .menu-item img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Sushi Zen Menu</h1>
+      <p>Artisan Sushi • Authentic Japanese Cuisine</p>
+    </header>
+
+    <div class="menu-section">
+      <h2>Signature Rolls</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="DragonRoll.jpg" alt="Dragon Roll">
+          <h3>Dragon Roll</h3>
+          <p>Shrimp tempura, avocado, eel sauce.</p>
+          <div class="price">₹650</div>
+        </div>
+        <div class="menu-item">
+          <img src="californiarolls.jpg" alt="California Roll">
+          <h3>California Roll</h3>
+          <p>Crab, cucumber, avocado, sesame seeds.</p>
+          <div class="price">₹450</div>
+        </div>
+        <div class="menu-item">
+          <img src="SpicyTunaRoll.jpg" alt="Spicy Tuna Roll">
+          <h3>Spicy Tuna Roll</h3>
+          <p>Tuna, chili mayo, cucumber.</p>
+          <div class="price">₹500</div>
+        </div>
+        <div class="menu-item">
+          <img src="vegroll.jpg" alt="Vegetarian Roll">
+          <h3>Vegetarian Roll</h3>
+          <p>Avocado, cucumber, carrot, cream cheese.</p>
+          <div class="price">₹400</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Nigiri & Sashimi</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="salmonnigiri.jpg" alt="Salmon Nigiri">
+          <h3>Salmon Nigiri</h3>
+          <p>Fresh salmon over vinegared rice.</p>
+          <div class="price">₹300</div>
+        </div>
+        <div class="menu-item">
+          <img src="tunaShashimi.jpg" alt="Tuna Sashimi">
+          <h3>Tuna Sashimi</h3>
+          <p>Delicate cuts of premium tuna.</p>
+          <div class="price">₹550</div>
+        </div>
+        <div class="menu-item">
+          <img src="EbiNigiri.jpg" alt="Ebi Nigiri">
+          <h3>Ebi Nigiri</h3>
+          <p>Sweet shrimp served over sushi rice.</p>
+          <div class="price">₹320</div>
+        </div>
+        <div class="menu-item">
+          <img src="octopus-sashimi-recipe.jpg" alt="Octopus Sashimi">
+          <h3>Octopus Sashimi</h3>
+          <p>Thinly sliced boiled octopus with wasabi.</p>
+          <div class="price">₹480</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Hot Dishes</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="miso-soup.jpg" alt="Miso Soup">
+          <h3>Miso Soup</h3>
+          <p>Traditional soy-based broth with tofu and seaweed.</p>
+          <div class="price">₹150</div>
+        </div>
+        <div class="menu-item">
+          <img src="Dinko-Tuna-Tempura-Prawn-recipe.jpg" alt="Prawn Tempura">
+          <h3>Prawn Tempura</h3>
+          <p>Lightly battered deep-fried prawns with dipping sauce.</p>
+          <div class="price">₹360</div>
+        </div>
+        <div class="menu-item">
+          <img src="Yakitori-7831-I.jpg" alt="Chicken Yakitori">
+          <h3>Chicken Yakitori</h3>
+          <p>Grilled skewered chicken glazed with tare sauce.</p>
+          <div class="price">₹300</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Sushi Zen | Crafted with harmony and taste.</p>
+    </footer>
+  </div>
+</body>
+</html>

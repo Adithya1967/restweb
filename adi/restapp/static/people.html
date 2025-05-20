@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Chefs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #c8102e;
+      --dark: #0f0f0f;
+      --light: #ffffff;
+      --muted: #dddddd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--light);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--light);
+      letter-spacing: 2px;
+    }
+
+    .chefs-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .chef-card {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .chef-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .chef-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .chef-details {
+      padding: 20px;
+    }
+
+    .chef-details h1 {
+      font-size: 1.3rem;
+      color: var(--light);
+      margin-bottom: 10px;
+    }
+
+    .chef-details h2,
+    .chef-details h3 {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      .chef-card img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Our Sushi Chefs</h1>
+    </header>
+
+    <div class="chefs-container">
+      <div class="chef-card">
+        <img src="1.jpg" alt="Chef Sato">
+        <div class="chef-details">
+          <h1>Chef Haruki Sato</h1>
+          <h2>Designation: Executive Sushi Chef</h2>
+          <h3>Experience: 15 years</h3>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="2.jpg" alt="Chef Aiko Tanaka">
+        <div class="chef-details">
+          <h1>Chef Aiko Tanaka</h1>
+          <h2>Designation: Nigiri Specialist</h2>
+          <h3>Experience: 8 years</h3>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="3.jpg" alt="Chef Kenji Yamamoto">
+        <div class="chef-details">
+          <h1>Chef Kenji Yamamoto</h1>
+          <h2>Designation: Sashimi Artist</h2>
+          <h3>Experience: 10 years</h3>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="4.jpg" alt="Chef Yuki Nakamura">
+        <div class="chef-details">
+          <h1>Chef Yuki Nakamura</h1>
+          <h2>Designation: Tempura & Hot Dish Chef</h2>
+          <h3>Experience: 6 years</h3>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="5.jpg" alt="Chef Daichi Fujiwara">
+        <div class="chef-details">
+          <h1>Chef Daichi Fujiwara</h1>
+          <h2>Designation: Rolls & Fusion Expert</h2>
+          <h3>Experience: 5 years</h3>
+        </div>
+      </div>
+      <div class="chef-card">
+        <img src="6.jpg" alt="Chef Hana Kobayashi">
+        <div class="chef-details">
+          <h1>Chef Hana Kobayashi</h1>
+          <h2>Designation: Dessert & Presentation Chef</h2>
+          <h3>Experience: 4 years</h3>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Sushi Zen | Crafted with harmony and taste.</p>
+    </footer>
+  </div>
+</body>
+</html>

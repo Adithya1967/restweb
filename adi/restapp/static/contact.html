@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sushi Zen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #c8102e;
+      --dark: #0f0f0f;
+      --light: #ffffff;
+      --muted: #dddddd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('rest.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--light);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      color: var(--light);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      color: var(--light);
+      background-color: var(--primary);
+      border-radius: 5px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .contact-info {
+      font-size: 1.2rem;
+      line-height: 2;
+      color: var(--muted);
+    }
+
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #999;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main {
+        margin: 30px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Sushi Zen</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="administration.html">Admin</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> <a href="tel:+914415443595">+91 4415443595</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sushi.zen@restaurant.com">sushi.zen@restaurant.com</a></p>
+        <p><strong>Location:</strong> <a href="https://www.google.com/maps?q=1,+Sushi+Zen,+OMR+Street,+Perungudi">1, Sushi Zen, OMR Street, Perungudi</a></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sushi Zen | Designed by <strong>Adithya Sivakumar</strong></p>
+      <p>
+        <a href="#">Instagram</a> •
+        <a href="#">Facebook</a> •
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
