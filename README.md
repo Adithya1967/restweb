@@ -801,7 +801,6 @@ Publish the website in the given URL.
 
 ## OUTPUT:
 
-![alt text](<Screenshot (449).png>)
 ![alt text](<Screenshot (450).png>)
 ![alt text](<Screenshot (451).png>)
 ![alt text](<Screenshot (452).png>)
